@@ -635,7 +635,7 @@
     },
     "deployXConnect": {
       "type": "bool",
-      "defaultValue": true
+      "defaultValue": false
     },
     "deployExmDds": {
       "type": "bool",

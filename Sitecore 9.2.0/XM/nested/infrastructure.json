@@ -840,23 +840,6 @@
       }
     },
     {
-      "type": "Microsoft.Cache/Redis",
-      "name": "[variables('redisCacheNameTidy')]",
-      "apiVersion": "[variables('redisApiVersion')]",
-      "location": "[parameters('location')]",
-      "properties": {
-        "sku": {
-          "name": "[parameters('resourceSizes').redisCache.SkuName]",
-          "family": "[parameters('resourceSizes').redisCache.SkuFamily]",
-          "capacity": "[parameters('resourceSizes').redisCache.SkuCapacity]"
-        },
-        "enableNonSslPort": false
-      },
-      "tags": {
-        "provider": "[variables('sitecoreTags').provider]"
-      }
-    },
-    {
       "type": "Microsoft.Insights/Components",
       "condition": "[parameters('useApplicationInsights')]",
       "name": "[variables('applicationInsightsNameTidy')]",

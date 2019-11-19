@@ -318,6 +318,7 @@
               "Telerik Encryption Key": "[parameters('telerikEncryptionKey')]",
               "License Xml": "[parameters('licenseXml')]",
 
+              "XDB Reference Data Connection String": "dummyValue",
               "EXM Master DB User Name": "dummyValue",
               "EXM Master DB Password": "dummyValue",
               "Processing Service Url": "dummyValue",

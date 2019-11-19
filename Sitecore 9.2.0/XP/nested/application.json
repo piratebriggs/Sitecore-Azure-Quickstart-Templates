@@ -36,7 +36,6 @@
     "appInsightsNameTidy": "[toLower(trim(parameters('applicationInsightsName')))]",
 
     "cmWebAppHostUrl": "[concat('https://', parameters('cmWebAppHostName'))]",
-    "exmDdsWebAppHostUrl": "[concat('https://', parameters('exmDdsWebAppHostName'))]",
 
     "searchProvider": "[if(empty(parameters('solrConnectionString')), 'Azure', 'Solr')]",
 
@@ -56,12 +55,7 @@
         "authCertificateThumbprint": null
       }
     },
-    "infrastructureExm": {
-      "type": "secureObject",
-      "defaultValue": {
-        "exmDdsWebAppHostName": null
-      }
-    },
+
 
     "deploymentId": {
       "type": "string",
@@ -290,10 +284,6 @@
       "type": "string",
       "minLength": 1,
       "defaultValue": "[parameters('infrastructure').cmWebAppHostName]"
-    },
-    "exmDdsWebAppHostName": {
-      "type": "string",
-      "defaultValue": "[if(empty(parameters('infrastructureExm')), '', parameters('infrastructureExm').exmDdsWebAppHostName)]"
     },
 
     "siWebAppName": {

@@ -892,9 +892,6 @@
           "infrastructure": {
             "value": "[reference(concat(parameters('deploymentId'), '-infrastructure')).outputs.infrastructure.value]"
           },
-          "infrastructureExm": {
-            "value": "[if(parameters('deployExmDds'), reference(concat(parameters('deploymentId'), '-infrastructure-exm')).outputs.infrastructureExm.value, json('{}'))]"
-          },
 
           "deploymentId": {
             "value": "[parameters('deploymentId')]"
@@ -1137,7 +1134,6 @@
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Resources/deployments', concat(parameters('deploymentId'), '-infrastructure-exm'))]",
         "[resourceId('Microsoft.Resources/deployments', concat(parameters('deploymentId'), '-application-ma'))]"
       ]
     },

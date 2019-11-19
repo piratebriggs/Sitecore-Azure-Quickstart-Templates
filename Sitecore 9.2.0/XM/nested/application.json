@@ -316,7 +316,30 @@
               "Sitecore Identity Authority": "[concat('https://', parameters('siWebAppHostName'))]",
               "Sitecore Identity Secret": "[parameters('siClientSecret')]",
               "Telerik Encryption Key": "[parameters('telerikEncryptionKey')]",
-              "License Xml": "[parameters('licenseXml')]"
+              "License Xml": "[parameters('licenseXml')]",
+
+              "EXM Master DB User Name": "dummyValue",
+              "EXM Master DB Password": "dummyValue",
+              "EXM Master Admin Connection String": "dummyValue",
+              "EXM Master Connection String": "dummyValue",
+              "Processing Service Url": "dummyValue",
+              "Reporting Service Url": "dummyValue",
+              "Reporting Service Api Key": "dummyValue",
+              "XConnect Collection": "dummyValue",
+              "XDB Reference Data Client": "dummyValue",
+              "XDB MA Reporting Client": "dummyValue",
+              "XDB MA Ops Client": "dummyValue",
+              "Cortex Reporting Client": "dummyValue",
+              "Messaging Connection String": "dummyValue",
+              "EXM Cryptographic Key": "dummyValue",
+              "EXM Authentication Key": "dummyValue",
+              "EXM EDS Provider": "CustomSMTP",
+              "XConnect Collection Certificate": "dummyValue",
+              "XDB Reference Data Client Certificate": "dummyValue",
+              "XDB MA Reporting Client Certificate": "dummyValue",
+              "XDB MA Ops Client Certificate": "dummyValue",
+              "Cortex Reporting Client Certificate": "dummyValue",
+              "Allow Invalid Client Certificates": "false"
             }
           }
         ]

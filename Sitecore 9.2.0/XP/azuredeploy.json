@@ -1132,10 +1132,7 @@
             "value": "[parameters('azureServiceBusManageSharedAccessKeyName')]"
           }
         }
-      },
-      "dependsOn": [
-        "[resourceId('Microsoft.Resources/deployments', concat(parameters('deploymentId'), '-application-ma'))]"
-      ]
+      }
     },
     {
       "copy": {

@@ -320,8 +320,6 @@
 
               "EXM Master DB User Name": "dummyValue",
               "EXM Master DB Password": "dummyValue",
-              "EXM Master Admin Connection String": "dummyValue",
-              "EXM Master Connection String": "dummyValue",
               "Processing Service Url": "dummyValue",
               "Reporting Service Url": "dummyValue",
               "Reporting Service Api Key": "dummyValue",

@@ -54,7 +54,8 @@
           {
             "packageUri": "[parameters('msDeployPackageUrl')]",
             "setParameters": {
-              "Application Path": "[variables('cmWebAppNameTidy')]"
+              "Application Path": "[variables('cmWebAppNameTidy')]",
+              "Master Admin Connection String": "dummyValue"
             }
           }
         ]
